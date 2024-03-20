@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<script src="{% static 'js/base.js' %}" defer></script>
+
+<body>
+  <label>URL:</label>
+  <input type="text" id="urlInput" name="u" value=""><br><br>
+  <div class="model-label">Model:</div>
+  <select id="modelDropdown">
+    {% for model_name in model_names %}
+      <option value="{{ model_name }}">{{ model_name }}</option>
+    {% endfor %}
+  </select>
+  <input id="submitButton" class="button" type="button" value="Go"> 
+  <div id="tableContainer">
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>Label</th>
+          <th>Entity</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <div id="copyButtons"></div> 
+  </div>
+  <button id="showTextButton" class="button">Show Text</button>
+  <div id="textDisplayContainer">
+    <div id="textDisplay"></div>
+  </div>
+</body>
+</html>

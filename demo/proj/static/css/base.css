@@ -1,0 +1,208 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 20px;
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+#urlInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.show-button {
+  background-color: green;
+  color: white;
+}
+
+.hide-button {
+  background-color: red;
+  color: white;
+}
+
+#submitButton,
+.copy-button,
+#showMoreButton {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#showMoreButton.toggled {
+  background-color: #28a745;
+}
+
+#resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#resultTable th,
+#resultTable td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+}
+
+#resultTable th:first-child,
+#resultTable td:first-child {
+  width: 10%;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#resultTable th:last-child,
+#resultTable td:last-child {
+  width: 90%;
+}
+
+#resultTable th {
+  border-right: 2px solid #ddd;
+}
+
+#resultTable td {
+  border-right: 2px solid #ddd;
+}
+
+#resultTable thead {
+  background-color: #3498db;
+  color: white;
+}
+
+#resultTable tbody tr:hover {
+  background-color: #ecf0f1;
+}
+
+.label-rectangles::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #3498db;
+}
+
+.label-rectangles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label-rectangles::after {
+  content: "";
+  flex-grow: 1;
+  min-width: 1px;
+}
+
+.label-rectangles div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#resultTable th:nth-child(3),
+#resultTable td:nth-child(3) {
+  width: 5px;
+  padding: 0;
+  text-align: center;
+}
+
+.button-container {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.label-rectangles::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  margin-right: 5px;
+  background-color: transparent;
+}
+
+#resultTable tbody tr:hover {
+  background-color: transparent;
+}
+
+.model-label {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#modelDropdown {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+#modelDropdown option {
+  background-color: #fff;
+  color: #333;
+}
+
+#fullDataText {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlighted-entity {
+  font-weight: bold;
+  background-color: yellow;
+}
+
+#textDisplayContainer {
+  max-height: 200px;
+  overflow: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  max-width: 1600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#textDisplay {
+  font-family: Arial, sans-serif;
+}
